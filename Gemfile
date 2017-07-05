@@ -84,3 +84,6 @@ gem 'rails_admin', '~> 1.2'
 gem 'bootstrap-sass'
 # A Ruby gem to load environment variables from `.env`.
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'rest-client'
+gem 'json'
