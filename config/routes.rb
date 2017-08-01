@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'static/index'
 
   devise_scope :user do
-    patch "/confirm" => "confirmations#confirm"
+    patch "/users/confirmation" => "confirmations#update", as: :user_confirmation_path
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
