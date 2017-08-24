@@ -8,7 +8,11 @@ import { JokeListItem } from './joke_list_item'
 class JokeList extends Component {
   constructor (props) {
     super(props)
-    this.props.fetchJokes()
+    console.log('Jokelist :', this.props.joke_list)
+
+    
+
+
     this.activeTags = this.activeTags.bind(this)
   }
 
@@ -21,7 +25,6 @@ class JokeList extends Component {
   }
 
   renderList () {
-    console.log('Compare Pool is: ', this.props.comparePool)
     return (
       this.activeTags().map((joke) => {
         return (
