@@ -5,9 +5,9 @@ import configureStore from './store'
 import App from './components/app'
 
 const MainApp = (props, _railsContext) => (
-  <Provider store={configureStore(props)}>
-    <App />
-  </Provider>
+    <Provider store={configureStore(props)}>
+      <App />
+    </Provider>
 )
 
 export default MainApp
