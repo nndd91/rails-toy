@@ -9,15 +9,14 @@ export default class App extends Component {
     return (
       <div className="container">
         <div className="row">
-          <h1>App Component</h1>
+          <h1>App Component2</h1>
           <div className="col-xs-2">
             <SideBar />
           </div>
 
           <div className="col-xs-10">
             <div className="row">
-              <Route path="/app" component={JokeList} />
-              <Route path="/app/test" component={SideBar} />
+              <JokeList />
             </div>
           </div>
         </div>

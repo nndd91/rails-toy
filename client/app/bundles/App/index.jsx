@@ -6,7 +6,6 @@ import App from './components/app'
 import { Router, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import { createBrowserHistory } from 'history'
-
 import routes from './routes'
 
 const MainApp = (props, _railsContext) => {

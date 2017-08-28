@@ -1,19 +1,18 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, IndexRoute, Link } from 'react-router-dom'
 import NavBar from './components/navbar'
 import Hello from './components/hello'
 import Hi from './components/hi'
 import App from './components/app'
+import MainPage from './components/main_page'
 
 export default (
-  <div>
-    <NavBar />
+  <MainPage>
     <Switch>
-      <Route exact path='/' component={App}/>
-      <Route path='/app/hello' component={Hello}/>
-      <Route path='/hi' component={Hi}/>
-      <Route path='/app/hi' component={Hi}/>
-      <Route path='/app' component={App}/>
+      <Route exact path="/app" component={Hello}/>
+      <Route path="/app/hello" component={Hello}/>
+      <Route path="/hi" component={Hi}/>
+      <Route path="/app/hi" component={Hi}/>
     </Switch>
-  </div>
+  </MainPage>
 )
