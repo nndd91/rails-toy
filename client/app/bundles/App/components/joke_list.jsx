@@ -10,9 +10,6 @@ class JokeList extends Component {
     super(props)
     console.log('Jokelist :', this.props.joke_list)
 
-    
-
-
     this.activeTags = this.activeTags.bind(this)
   }
 
@@ -28,11 +25,13 @@ class JokeList extends Component {
     return (
       this.activeTags().map((joke) => {
         return (
-            <JokeListItem key={joke.id}
-                          joke={joke}
-                          inComparePool={this.props.comparePool.includes(joke)}
-                          addToComparePool={() => {this.props.addToComparePool(joke)}}
-                          removeFromComparePool={() => {this.props.removeFromComparePool(joke)}}/>
+            <JokeListItem
+              key={joke.id}
+              joke={joke}
+              inComparePool={this.props.comparePool.includes(joke)}
+              addToComparePool={() => {this.props.addToComparePool(joke)}}
+              removeFromComparePool={() => {this.props.removeFromComparePool(joke)}}
+            />
         )
       })
     )
